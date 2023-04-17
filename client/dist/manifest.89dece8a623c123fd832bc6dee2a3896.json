@@ -1,0 +1,10 @@
+{
+  "name": "jate",
+  "short_name": "jate",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "edit text n stuff",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}
