@@ -42,10 +42,10 @@ module.exports = () => {
         //   },
         // ],
       }),
-      new InjectManifest({
-        swSrc: "./src/sw.js",
-        swDest: "service-worker.js",
-      }),
+      // new InjectManifest({
+      //   swSrc: "./src/src-sw.js",
+      //   swDest: "service-worker.js",
+      // }),
     ],
 
     module: {
@@ -54,10 +54,10 @@ module.exports = () => {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, "css-loader"],
         },
-        // {
-        //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        //   type: "asset/resource",
-        // },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: "asset/resource",
+        },
         {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
